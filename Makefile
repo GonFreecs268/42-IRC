@@ -1,10 +1,9 @@
-NAME = ircserv
+NAME = ./ircserv
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -g3
 OBJ_DIR = objs/
 
 SRC =	srcs/main.cpp \
-
 
 OBJ = $(addprefix $(OBJ_DIR), $(notdir $(SRC:.cpp=.o)))
 
@@ -13,7 +12,7 @@ CURRENT_FILE = 0
 PERCENTAGE = 0
 
 GREEN = \033[32m
-RED = \033[31m
+RED = \033[31mPmergeM
 YELLOW = \033[33m
 RESET = \033[0m
 
